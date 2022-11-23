@@ -22,6 +22,13 @@ const connect = function () {
     conn.write('Name: Jim');
   });
 
+  // This code can move the snake up continuously, upon connection to the server
+  // conn.on('connect', () => {
+  //   setInterval(() => {
+  //     conn.write("Move: up");
+  //   }, "500");
+  // });
+
   return conn;
 };
 
